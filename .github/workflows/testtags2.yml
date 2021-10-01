@@ -1,4 +1,4 @@
-name: ci
+name: ci2
 
 on:
   schedule:
@@ -64,5 +64,5 @@ jobs:
         with:
           context: .
           push: ${{ github.event_name != 'pull_request' }}
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
+          tags: test${{ steps.meta.outputs.tags }}
+          labels: test${{ steps.meta.outputs.labels }}
