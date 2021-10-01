@@ -1,4 +1,4 @@
-FROM ubuntu/ubuntu
+FROM ubuntu:20.04
 RUN su rstudio && \
   cd /home/rstudio && \
   wget https://github.com/Robinlovelace/geocompr/archive/main.zip && \
