@@ -30,7 +30,7 @@ jobs:
             ghcr.io/robinlovelace/testtags
           # generate Docker tags based on the following events/attributes
           tags: |
-            type=raw,value=test
+            type=raw,value=test,prefix=test_
             type=ref,event=branch
             type=ref,event=pr
             type=semver,pattern={{version}}
