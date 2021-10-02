@@ -31,7 +31,7 @@ jobs:
           # generate Docker tags based on the following events/attributes
           tags: |
             type=raw,value=suggests
-            type=raw,value=suggests_,affix={{date}}
+            type=raw,value=suggests_,suffix={{date}}
       -
         name: Set up QEMU
         uses: docker/setup-qemu-action@v1
